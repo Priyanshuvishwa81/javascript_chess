@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="chess">
+        <div class="for_black">
+            <div class="for_black_inner">
+                <div class="for_blocks" id="out_black_8"></div>
+                <div class="for_blocks" id="out_black_7"></div>
+                <div class="for_blocks" id="out_black_6"></div>
+                <div class="for_blocks" id="out_black_5"></div>
+                <div class="for_blocks" id="out_black_4"></div>
+                <div class="for_blocks" id="out_black_3"></div>
+                <div class="for_blocks" id="out_black_2"></div>
+                <div class="for_blocks" id="out_black_1"></div>
+            </div>
+            <div class="for_black_inner">
+                <div class="for_blocks" id="out_black_9"></div>
+                <div class="for_blocks" id="out_black_10"></div>
+                <div class="for_blocks" id="out_black_11"></div>
+                <div class="for_blocks" id="out_black_12"></div>
+                <div class="for_blocks" id="out_black_13"></div>
+                <div class="for_blocks" id="out_black_14"></div>
+                <div class="for_blocks" id="out_black_15"></div>
+                <div class="for_blocks" id="out_black_16"></div>
+            </div>
+
+         
+           
+        </div>
+
+        <div class="outerarea">
+            <div class="my_row1 my_rows">
+                <div class="blocks" id="11" style="background-image: url(imgs/B_rook.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="12" style="background-image: url(imgs/B_knight.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="13" style="background-image: url(imgs/B_bishop.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="14" style="background-image: url(imgs/B_queen.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="15" style="background-image: url(imgs/B_king.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="16" style="background-image: url(imgs/B_bishop.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="17" style="background-image: url(imgs/B_knight.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="18" style="background-image: url(imgs/B_rook.png);" onclick="myturn(this.id)">
+                </div>
+
+            </div>
+            <div class="my_row2 my_rows">
+                <div class="blocks" id="21" style="background-image: url(imgs/B_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="22" style="background-image: url(imgs/B_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="23" style="background-image: url(imgs/B_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="24" style="background-image: url(imgs/B_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="25" style="background-image: url(imgs/B_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="26" style="background-image: url(imgs/B_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="27" style="background-image: url(imgs/B_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="28" style="background-image: url(imgs/B_pawn.png);" onclick="myturn(this.id)">
+                </div>
+
+            </div>
+            <div class="my_row3 my_rows">
+                <div class="blocks" id="31" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="32" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="33" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="34" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="35" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="36" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="37" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="38" onclick="myturn(this.id)"></div>
+
+            </div>
+            <div class="my_row4 my_rows">
+                <div class="blocks" id="41" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="42" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="43" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="44" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="45" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="46" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="47" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="48" onclick="myturn(this.id)"></div>
+
+            </div>
+            <div class="my_row5 my_rows">
+                <div class="blocks" id="51" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="52" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="53" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="54" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="55" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="56" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="57" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="58" onclick="myturn(this.id)"></div>
+
+            </div>
+            <div class="my_row6 my_rows">
+                <div class="blocks" id="61" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="62" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="63" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="64" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="65" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="66" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="67" onclick="myturn(this.id)"></div>
+                <div class="blocks" id="68" onclick="myturn(this.id)"></div>
+
+            </div>
+            <div class="my_row7 my_rows">
+                <div class="blocks" id="71" style="background-image: url(imgs/W_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="72" style="background-image: url(imgs/W_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="73" style="background-image: url(imgs/W_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="74" style="background-image: url(imgs/W_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="75" style="background-image: url(imgs/W_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="76" style="background-image: url(imgs/W_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="77" style="background-image: url(imgs/W_pawn.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="78" style="background-image: url(imgs/W_pawn.png);" onclick="myturn(this.id)">
+                </div>
+
+            </div>
+            <div class="my_row8 my_rows">
+                <div class="blocks" id="81" style="background-image: url(imgs/W_rook.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="82" style="background-image: url(imgs/W_knight.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="83" style="background-image: url(imgs/W_bishop.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="84" style="background-image: url(imgs/W_queen.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="85" style="background-image: url(imgs/W_king.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="86" style="background-image: url(imgs/W_bishop.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="87" style="background-image: url(imgs/W_knight.png);" onclick="myturn(this.id)">
+                </div>
+                <div class="blocks" id="88" style="background-image: url(imgs/W_rook.png);" onclick="myturn(this.id)">
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="for_white">
+            <div class="for_white_inner">
+                <div class="for_blocks" id="out_white_8"></div>
+                <div class="for_blocks" id="out_white_7"></div>
+                <div class="for_blocks" id="out_white_6"></div>
+                <div class="for_blocks" id="out_white_5"></div>
+                <div class="for_blocks" id="out_white_4"></div>
+                <div class="for_blocks" id="out_white_3"></div>
+                <div class="for_blocks" id="out_white_2"></div>
+                <div class="for_blocks" id="out_white_1"></div>
+            </div>
+            <div class="for_white_inner">
+                <div class="for_blocks" id="out_white_16"></div>
+                <div class="for_blocks" id="out_white_15"></div>
+                <div class="for_blocks" id="out_white_14"></div>
+                <div class="for_blocks" id="out_white_13"></div>
+                <div class="for_blocks" id="out_white_12"></div>
+                <div class="for_blocks" id="out_white_11"></div>
+                <div class="for_blocks" id="out_white_10"></div>
+                <div class="for_blocks" id="out_white_9"></div>
+
+
+            </div>
+
+
+        </div>
+      
+    </div>
+    <div class="which_team" id="which_team">White`s Move...</div>
+    <script src="js.js"></script>
+</body>
+
+</html>
